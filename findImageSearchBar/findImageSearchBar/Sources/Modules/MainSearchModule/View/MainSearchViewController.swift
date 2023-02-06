@@ -14,6 +14,7 @@ class MainSearchViewController: UIViewController {
         guard isViewLoaded else { return nil }
         return view as? MainView
     }
+    
     private var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = false

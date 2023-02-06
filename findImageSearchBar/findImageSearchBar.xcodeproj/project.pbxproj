@@ -18,6 +18,12 @@
 		A52442182991269100033F41 /* MainSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442172991269100033F41 /* MainSearchPresenter.swift */; };
 		A524421B2991280D00033F41 /* MainSearchModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524421A2991280D00033F41 /* MainSearchModuleAssembly.swift */; };
 		A524421D2991286D00033F41 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524421C2991286D00033F41 /* RouterProtocol.swift */; };
+		A52442232991296900033F41 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442222991296900033F41 /* DetailInfoViewController.swift */; };
+		A52442252991297700033F41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442242991297700033F41 /* DetailView.swift */; };
+		A5244227299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244226299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift */; };
+		A5244229299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244228299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift */; };
+		A524422B299136FE00033F41 /* DetailInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524422A299136FE00033F41 /* DetailInfoPresenter.swift */; };
+		A524422E2991371B00033F41 /* DetailInfoModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		A52442172991269100033F41 /* MainSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchPresenter.swift; sourceTree = "<group>"; };
 		A524421A2991280D00033F41 /* MainSearchModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchModuleAssembly.swift; sourceTree = "<group>"; };
 		A524421C2991286D00033F41 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		A52442222991296900033F41 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoViewController.swift; sourceTree = "<group>"; };
+		A52442242991297700033F41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A5244226299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoPresenterInputProtocol.swift; sourceTree = "<group>"; };
+		A5244228299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoPresenterOutputProtocol.swift; sourceTree = "<group>"; };
+		A524422A299136FE00033F41 /* DetailInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoPresenter.swift; sourceTree = "<group>"; };
+		A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoModuleAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A524420929911FC400033F41 /* MainSearchModule */,
+				A524421E2991291F00033F41 /* DetailInfoModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -200,6 +213,51 @@
 				A524421A2991280D00033F41 /* MainSearchModuleAssembly.swift */,
 			);
 			path = MainSearchModuleAssembly;
+			sourceTree = "<group>";
+		};
+		A524421E2991291F00033F41 /* DetailInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				A524422C2991370700033F41 /* DetailInfoModuleAssembly */,
+				A524421F2991293C00033F41 /* View */,
+				A52442202991294300033F41 /* Presenter */,
+			);
+			path = DetailInfoModule;
+			sourceTree = "<group>";
+		};
+		A524421F2991293C00033F41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A52442222991296900033F41 /* DetailInfoViewController.swift */,
+				A52442212991295400033F41 /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A52442202991294300033F41 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5244226299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift */,
+				A5244228299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift */,
+				A524422A299136FE00033F41 /* DetailInfoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A52442212991295400033F41 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A52442242991297700033F41 /* DetailView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A524422C2991370700033F41 /* DetailInfoModuleAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */,
+			);
+			path = DetailInfoModuleAssembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,14 +331,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A524421D2991286D00033F41 /* RouterProtocol.swift in Sources */,
+				A524422B299136FE00033F41 /* DetailInfoPresenter.swift in Sources */,
+				A524422E2991371B00033F41 /* DetailInfoModuleAssembly.swift in Sources */,
 				A52441F129911CA400033F41 /* MainSearchViewController.swift in Sources */,
 				A524420F299120FE00033F41 /* MainView.swift in Sources */,
+				A5244229299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift in Sources */,
 				A524421B2991280D00033F41 /* MainSearchModuleAssembly.swift in Sources */,
 				A52442162991265D00033F41 /* MainSearchPresenterOutputProtocol.swift in Sources */,
+				A52442252991297700033F41 /* DetailView.swift in Sources */,
 				A52441ED29911CA400033F41 /* AppDelegate.swift in Sources */,
 				A5244212299122FD00033F41 /* MainCollectionViewCell.swift in Sources */,
 				A52442182991269100033F41 /* MainSearchPresenter.swift in Sources */,
 				A52442142991264C00033F41 /* MainSearchPresenterInputProtocol.swift in Sources */,
+				A5244227299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift in Sources */,
+				A52442232991296900033F41 /* DetailInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

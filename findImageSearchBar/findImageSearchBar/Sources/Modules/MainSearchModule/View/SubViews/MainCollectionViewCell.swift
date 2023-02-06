@@ -12,7 +12,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     static let reuseId = "MainCollectionViewCell"
 
     //MARK: - Views
-    var newsImageView: UIImageView = {
+    var responceImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
@@ -45,7 +45,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        newsImageView.image = nil
+        responceImageView.image = nil
     }
 }
 
@@ -53,17 +53,17 @@ final class MainCollectionViewCell: UICollectionViewCell {
 extension MainCollectionViewCell {
     private func setupHierarchy() {
         [
-            newsImageView,
+            responceImageView,
             activityIndicatorView
         ].forEach { addSubview($0) }
     }
     
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            newsImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            newsImageView.topAnchor.constraint(equalTo: topAnchor),
-            newsImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            newsImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            responceImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            responceImageView.topAnchor.constraint(equalTo: topAnchor),
+            responceImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            responceImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             activityIndicatorView.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: centerYAnchor),

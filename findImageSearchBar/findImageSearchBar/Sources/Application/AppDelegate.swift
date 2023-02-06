@@ -14,7 +14,7 @@ var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = MainSearchViewController()
+        let vc = DetailInfoViewController()
         window?.rootViewController = vc 
         window?.overrideUserInterfaceStyle = .light
         window?.makeKeyAndVisible()
