@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A52441ED29911CA400033F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52441EC29911CA400033F41 /* AppDelegate.swift */; };
-		A52441EF29911CA400033F41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52441EE29911CA400033F41 /* SceneDelegate.swift */; };
 		A52441F129911CA400033F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52441F029911CA400033F41 /* ViewController.swift */; };
 		A52441F629911CA700033F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52441F529911CA700033F41 /* Assets.xcassets */; };
 		A52441F929911CA700033F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52441F729911CA700033F41 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		A52441E929911CA400033F41 /* findImageSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findImageSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52441EC29911CA400033F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A52441EE29911CA400033F41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A52441F029911CA400033F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A52441F529911CA700033F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52441F829911CA700033F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,85 @@
 		A52441EB29911CA400033F41 /* findImageSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				A52441EC29911CA400033F41 /* AppDelegate.swift */,
-				A52441EE29911CA400033F41 /* SceneDelegate.swift */,
+				A524420029911E4100033F41 /* Resources */,
+				A524420129911E4A00033F41 /* Sources */,
 				A52441F029911CA400033F41 /* ViewController.swift */,
-				A52441F529911CA700033F41 /* Assets.xcassets */,
-				A52441F729911CA700033F41 /* LaunchScreen.storyboard */,
-				A52441FA29911CA700033F41 /* Info.plist */,
 			);
 			path = findImageSearchBar;
+			sourceTree = "<group>";
+		};
+		A524420029911E4100033F41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A524420329911E6B00033F41 /* Supporting files */,
+				A524420229911E6200033F41 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A524420129911E4A00033F41 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A524420429911E7600033F41 /* Application */,
+				A524420729911E8C00033F41 /* Extensions */,
+				A524420829911E9A00033F41 /* Services */,
+				A524420529911E7E00033F41 /* Router */,
+				A524420629911E8300033F41 /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A524420229911E6200033F41 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A52441FA29911CA700033F41 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A524420329911E6B00033F41 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A52441F529911CA700033F41 /* Assets.xcassets */,
+				A52441F729911CA700033F41 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		A524420429911E7600033F41 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A52441EC29911CA400033F41 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A524420529911E7E00033F41 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A524420629911E8300033F41 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A524420729911E8C00033F41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A524420829911E9A00033F41 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +205,6 @@
 			files = (
 				A52441F129911CA400033F41 /* ViewController.swift in Sources */,
 				A52441ED29911CA400033F41 /* AppDelegate.swift in Sources */,
-				A52441EF29911CA400033F41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AJ52SSRKR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = findImageSearchBar/Info.plist;
+				INFOPLIST_FILE = findImageSearchBar/Resources/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -307,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AJ52SSRKR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = findImageSearchBar/Info.plist;
+				INFOPLIST_FILE = findImageSearchBar/Resources/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
