@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol DetailInfoPresenterInputProtocol {
+    func prevImageData()
+    func nextImageData()
+    func configureViewWithCurrentViewModel()
+    func openImageDataInWebView()
+}

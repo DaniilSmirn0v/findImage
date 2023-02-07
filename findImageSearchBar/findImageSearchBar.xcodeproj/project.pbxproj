@@ -24,6 +24,22 @@
 		A5244229299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244228299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift */; };
 		A524422B299136FE00033F41 /* DetailInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524422A299136FE00033F41 /* DetailInfoPresenter.swift */; };
 		A524422E2991371B00033F41 /* DetailInfoModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */; };
+		A524423329913A8A00033F41 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524423229913A8A00033F41 /* ImageModel.swift */; };
+		A524423629913F1100033F41 /* DefaultComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524423529913F1100033F41 /* DefaultComponents.swift */; };
+		A52442382991401A00033F41 /* ImageDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442372991401A00033F41 /* ImageDataRequestFactory.swift */; };
+		A524423A2991405B00033F41 /* ApiUrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442392991405B00033F41 /* ApiUrlFactory.swift */; };
+		A524423D2991427C00033F41 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524423C2991427C00033F41 /* NetworkError.swift */; };
+		A5244241299142AB00033F41 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244240299142AB00033F41 /* NetworkServiceProtocol.swift */; };
+		A52442432991431200033F41 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442422991431200033F41 /* NetworkService.swift */; };
+		A524424829914A8D00033F41 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524424729914A8D00033F41 /* ViewModelProtocol.swift */; };
+		A524424A29914AA600033F41 /* ImageDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524424929914AA600033F41 /* ImageDataViewModel.swift */; };
+		A524424C29914CA900033F41 /* Extension Optional + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524424B29914CA900033F41 /* Extension Optional + String.swift */; };
+		A524424E29914F4B00033F41 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524424D29914F4B00033F41 /* MainRouter.swift */; };
+		A524425129923EF900033F41 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524425029923EF900033F41 /* ImageLoaderService.swift */; };
+		A52442552992435F00033F41 /* CollectionViewCellConfigurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442542992435F00033F41 /* CollectionViewCellConfigurableProtocol.swift */; };
+		A52442572992734C00033F41 /* DetailViewConfigurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52442562992734C00033F41 /* DetailViewConfigurableProtocol.swift */; };
+		A524425A29929BE500033F41 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524425929929BE500033F41 /* WebViewController.swift */; };
+		A524425C2992A40000033F41 /* UIViewController + AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524425B2992A40000033F41 /* UIViewController + AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +62,22 @@
 		A5244228299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoPresenterOutputProtocol.swift; sourceTree = "<group>"; };
 		A524422A299136FE00033F41 /* DetailInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoPresenter.swift; sourceTree = "<group>"; };
 		A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoModuleAssembly.swift; sourceTree = "<group>"; };
+		A524423229913A8A00033F41 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		A524423529913F1100033F41 /* DefaultComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultComponents.swift; sourceTree = "<group>"; };
+		A52442372991401A00033F41 /* ImageDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataRequestFactory.swift; sourceTree = "<group>"; };
+		A52442392991405B00033F41 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
+		A524423C2991427C00033F41 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A5244240299142AB00033F41 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		A52442422991431200033F41 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A524424729914A8D00033F41 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		A524424929914AA600033F41 /* ImageDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataViewModel.swift; sourceTree = "<group>"; };
+		A524424B29914CA900033F41 /* Extension Optional + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension Optional + String.swift"; sourceTree = "<group>"; };
+		A524424D29914F4B00033F41 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		A524425029923EF900033F41 /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		A52442542992435F00033F41 /* CollectionViewCellConfigurableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellConfigurableProtocol.swift; sourceTree = "<group>"; };
+		A52442562992734C00033F41 /* DetailViewConfigurableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewConfigurableProtocol.swift; sourceTree = "<group>"; };
+		A524425929929BE500033F41 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A524425B2992A40000033F41 /* UIViewController + AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + AlertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A524421C2991286D00033F41 /* RouterProtocol.swift */,
+				A524424D29914F4B00033F41 /* MainRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -141,8 +174,11 @@
 		A524420629911E8300033F41 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A52442442991486000033F41 /* ConfigureViewsHelper */,
+				A524422F299139B100033F41 /* Model */,
 				A524420929911FC400033F41 /* MainSearchModule */,
 				A524421E2991291F00033F41 /* DetailInfoModule */,
+				A524425829929BC700033F41 /* WebViewModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -150,6 +186,8 @@
 		A524420729911E8C00033F41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A524424B29914CA900033F41 /* Extension Optional + String.swift */,
+				A524425B2992A40000033F41 /* UIViewController + AlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,6 +195,8 @@
 		A524420829911E9A00033F41 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A524424F29923EDB00033F41 /* ImageLoaderService */,
+				A524423429913BFE00033F41 /* NetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				A5244219299127F600033F41 /* MainSearchModuleAssembly */,
-				A524420C2991201100033F41 /* Model */,
 				A524420A29911FF600033F41 /* View */,
 				A524420B2991200500033F41 /* Presenter */,
 			);
@@ -189,13 +228,6 @@
 				A52442172991269100033F41 /* MainSearchPresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A524420C2991201100033F41 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A524420D299120DD00033F41 /* SubViews */ = {
@@ -258,6 +290,62 @@
 				A524422D2991371B00033F41 /* DetailInfoModuleAssembly.swift */,
 			);
 			path = DetailInfoModuleAssembly;
+			sourceTree = "<group>";
+		};
+		A524422F299139B100033F41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A524423229913A8A00033F41 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A524423429913BFE00033F41 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				A524423B2991425E00033F41 /* NetworkComponents */,
+				A524423C2991427C00033F41 /* NetworkError.swift */,
+				A5244240299142AB00033F41 /* NetworkServiceProtocol.swift */,
+				A52442422991431200033F41 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		A524423B2991425E00033F41 /* NetworkComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A524423529913F1100033F41 /* DefaultComponents.swift */,
+				A52442372991401A00033F41 /* ImageDataRequestFactory.swift */,
+				A52442392991405B00033F41 /* ApiUrlFactory.swift */,
+			);
+			path = NetworkComponents;
+			sourceTree = "<group>";
+		};
+		A52442442991486000033F41 /* ConfigureViewsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A524424729914A8D00033F41 /* ViewModelProtocol.swift */,
+				A524424929914AA600033F41 /* ImageDataViewModel.swift */,
+				A52442542992435F00033F41 /* CollectionViewCellConfigurableProtocol.swift */,
+				A52442562992734C00033F41 /* DetailViewConfigurableProtocol.swift */,
+			);
+			path = ConfigureViewsHelper;
+			sourceTree = "<group>";
+		};
+		A524424F29923EDB00033F41 /* ImageLoaderService */ = {
+			isa = PBXGroup;
+			children = (
+				A524425029923EF900033F41 /* ImageLoaderService.swift */,
+			);
+			path = ImageLoaderService;
+			sourceTree = "<group>";
+		};
+		A524425829929BC700033F41 /* WebViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				A524425929929BE500033F41 /* WebViewController.swift */,
+			);
+			path = WebViewModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,21 +418,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52442432991431200033F41 /* NetworkService.swift in Sources */,
+				A52442552992435F00033F41 /* CollectionViewCellConfigurableProtocol.swift in Sources */,
 				A524421D2991286D00033F41 /* RouterProtocol.swift in Sources */,
 				A524422B299136FE00033F41 /* DetailInfoPresenter.swift in Sources */,
+				A52442572992734C00033F41 /* DetailViewConfigurableProtocol.swift in Sources */,
 				A524422E2991371B00033F41 /* DetailInfoModuleAssembly.swift in Sources */,
+				A524424829914A8D00033F41 /* ViewModelProtocol.swift in Sources */,
+				A524424E29914F4B00033F41 /* MainRouter.swift in Sources */,
+				A524425C2992A40000033F41 /* UIViewController + AlertController.swift in Sources */,
 				A52441F129911CA400033F41 /* MainSearchViewController.swift in Sources */,
 				A524420F299120FE00033F41 /* MainView.swift in Sources */,
+				A524423A2991405B00033F41 /* ApiUrlFactory.swift in Sources */,
+				A524425129923EF900033F41 /* ImageLoaderService.swift in Sources */,
 				A5244229299136C000033F41 /* DetailInfoPresenterOutputProtocol.swift in Sources */,
+				A524425A29929BE500033F41 /* WebViewController.swift in Sources */,
+				A524424C29914CA900033F41 /* Extension Optional + String.swift in Sources */,
 				A524421B2991280D00033F41 /* MainSearchModuleAssembly.swift in Sources */,
 				A52442162991265D00033F41 /* MainSearchPresenterOutputProtocol.swift in Sources */,
+				A524423D2991427C00033F41 /* NetworkError.swift in Sources */,
+				A524424A29914AA600033F41 /* ImageDataViewModel.swift in Sources */,
 				A52442252991297700033F41 /* DetailView.swift in Sources */,
 				A52441ED29911CA400033F41 /* AppDelegate.swift in Sources */,
 				A5244212299122FD00033F41 /* MainCollectionViewCell.swift in Sources */,
 				A52442182991269100033F41 /* MainSearchPresenter.swift in Sources */,
+				A524423629913F1100033F41 /* DefaultComponents.swift in Sources */,
 				A52442142991264C00033F41 /* MainSearchPresenterInputProtocol.swift in Sources */,
 				A5244227299136AF00033F41 /* DetailInfoPresenterInputProtocol.swift in Sources */,
+				A5244241299142AB00033F41 /* NetworkServiceProtocol.swift in Sources */,
 				A52442232991296900033F41 /* DetailInfoViewController.swift in Sources */,
+				A52442382991401A00033F41 /* ImageDataRequestFactory.swift in Sources */,
+				A524423329913A8A00033F41 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

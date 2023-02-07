@@ -8,5 +8,7 @@
 import Foundation
 
 protocol MainSearchPresenterInputProtocol {
-    
+    func getDataFromNet(with query: String)
+    func emptyDataResult()
+    func pushToDetailInfoViewController(with currentViewModel: ViewModel, viewModels: [ViewModel])
 }

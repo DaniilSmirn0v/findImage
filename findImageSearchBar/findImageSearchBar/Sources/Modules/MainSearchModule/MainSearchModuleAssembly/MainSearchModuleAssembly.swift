@@ -9,6 +9,11 @@ import UIKit
 
 final class MainSearchModuleAssembly {
     static func createMainSearchModule(router: RouterProtocol) -> UIViewController {
-        return UIViewController()
+        let networkService = NetworkService()
+        let presenter = MainSearchPresenter(networkService: networkService, router: router)
+        let view = MainSearchViewController(presenter: presenter)
+        presenter.view = view
+        
+        return view
     }
 }

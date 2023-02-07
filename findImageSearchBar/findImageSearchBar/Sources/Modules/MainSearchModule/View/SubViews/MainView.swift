@@ -8,18 +8,28 @@
 import UIKit
 
 final class MainView: UIView {
-    //MARK: - Views
+    
+    // MARK: - Views
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: setupCompositionalLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(MainCollectionViewCell.self,
                                 forCellWithReuseIdentifier: MainCollectionViewCell.reuseId)
         collectionView.showsVerticalScrollIndicator = false
-        
+        collectionView.keyboardDismissMode = .onDrag
         return collectionView
     }()
     
-    //MARK: - Initialize
+    var activityIndicatorView: UIActivityIndicatorView = {
+        let activityIndicatorView = UIActivityIndicatorView(style: .medium)
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.tintColor = .black
+        activityIndicatorView.hidesWhenStopped = true
+        
+        return activityIndicatorView
+    }()
+    
+    // MARK: - Initialize
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupHierarchy()
@@ -31,7 +41,7 @@ final class MainView: UIView {
     }
 }
 
-//MARK: - Layout methods
+// MARK: - Layout methods
 extension MainView {
     
     private func setupCompositionalLayout() -> UICollectionViewLayout {
@@ -42,7 +52,7 @@ extension MainView {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                               heightDimension: .fractionalHeight(0.3))
+                                               heightDimension: .fractionalHeight(0.4))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                        repeatingSubitem: item,
                                                        count: 2)
@@ -61,7 +71,10 @@ extension MainView {
     }
     
     private func setupHierarchy() {
-        addSubview(collectionView)
+        [
+        collectionView,
+        activityIndicatorView
+        ].forEach { addSubview($0)}
     }
     
     private func setupLayout() {
@@ -69,7 +82,10 @@ extension MainView {
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.topAnchor.constraint(equalTo: topAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            activityIndicatorView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            activityIndicatorView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

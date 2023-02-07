@@ -10,19 +10,23 @@ import UIKit
 final class MainCollectionViewCell: UICollectionViewCell {
     //MARK: - Properties
     static let reuseId = "MainCollectionViewCell"
-
+    private var imageUrl: String?
+    private let imageLoader = ImageLoader.shared
+    
+    
     //MARK: - Views
-    var responceImageView: UIImageView = {
+    private var responceImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
-        imageView.backgroundColor = .systemOrange
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 14
+        imageView.layer.borderWidth = 1
+        imageView.layer.borderColor = UIColor.black.cgColor
         return imageView
     }()
-      
-    var activityIndicatorView: UIActivityIndicatorView = {
+    
+    private var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView(style: .medium)
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicatorView.color = .black
@@ -45,6 +49,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        imageUrl = nil
         responceImageView.image = nil
     }
 }
@@ -71,3 +76,28 @@ extension MainCollectionViewCell {
     }
 }
 
+extension MainCollectionViewCell: CollectionViewCellConfigurableProtocol {
+    func configure(with viewModel: ViewModel) {
+        guard let viewModel = viewModel as? ImageDataViewModel else { return }
+        activityIndicatorView.startAnimating()
+        self.imageUrl = viewModel.imageUrlString
+        downloadImage(urlString: imageUrl ?? "")
+    }
+    
+    private func downloadImage(urlString: String) {
+        imageLoader.getImage(from: urlString) { image in
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self,
+                      self.imageUrl == urlString else {
+                    return
+                }
+                
+                self.responceImageView.image = image
+                
+                if self.responceImageView.image != nil {
+                    self.activityIndicatorView.stopAnimating()
+                }
+            }
+        }
+    }
+}
