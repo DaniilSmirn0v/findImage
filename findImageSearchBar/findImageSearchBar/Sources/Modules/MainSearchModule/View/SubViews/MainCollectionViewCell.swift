@@ -8,11 +8,11 @@
 import UIKit
 
 final class MainCollectionViewCell: UICollectionViewCell {
+    
     //MARK: - Properties
     static let reuseId = "MainCollectionViewCell"
     private var imageUrl: String?
     private let imageLoader = ImageLoader.shared
-    
     
     //MARK: - Views
     private var responceImageView: UIImageView = {

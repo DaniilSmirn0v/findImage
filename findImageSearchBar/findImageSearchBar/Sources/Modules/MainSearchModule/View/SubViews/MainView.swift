@@ -72,8 +72,8 @@ extension MainView {
     
     private func setupHierarchy() {
         [
-        collectionView,
-        activityIndicatorView
+            collectionView,
+            activityIndicatorView
         ].forEach { addSubview($0)}
     }
     

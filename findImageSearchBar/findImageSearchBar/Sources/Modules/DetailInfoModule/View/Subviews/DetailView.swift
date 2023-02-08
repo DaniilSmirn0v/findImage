@@ -8,6 +8,7 @@
 import UIKit
 
 final class DetailView: UIView {
+    
     // MARK: - Properties
     private let imageLoader = ImageLoader.shared
     

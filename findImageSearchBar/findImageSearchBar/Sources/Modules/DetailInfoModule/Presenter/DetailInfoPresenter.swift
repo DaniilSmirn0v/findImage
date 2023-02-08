@@ -8,6 +8,7 @@
 import Foundation
 
 final class DetailInfoPresenter: DetailInfoPresenterInputProtocol {
+    
     // MARK: - Properties
     weak var view: DetailInfoPresenterOutputProtocol?
     private let router: RouterProtocol
