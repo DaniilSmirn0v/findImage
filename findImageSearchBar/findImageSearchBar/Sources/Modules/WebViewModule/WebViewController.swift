@@ -41,6 +41,7 @@ final class WebViewController: UIViewController, WKUIDelegate {
     private func setupWebView() {
         guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)
+        ///xcode complains about threads when using webView. I would use sfSafari to prevent this from happening (there was a topic from Apple that this is their cant). But the technical specification specifies the webView
         DispatchQueue.main.async {
             self.webView.load(request)
         }
