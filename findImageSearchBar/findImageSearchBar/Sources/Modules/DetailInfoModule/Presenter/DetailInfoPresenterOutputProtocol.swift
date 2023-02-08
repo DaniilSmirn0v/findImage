@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol DetailInfoPresenterOutputProtocol: AnyObject {
+    func configureView(with viewModel: ViewModel)
+}

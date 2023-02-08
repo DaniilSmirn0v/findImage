@@ -9,6 +9,6 @@ import Foundation
 
 protocol RouterProtocol {
     func initialViewController()
-//    func pushToDetailViewController(with viewModel: ViewModel)
-//    func openWkWebView(with urlString: String)
+    func pushToDetailViewController(with currentViewModel: ViewModel, viewModels: [ViewModel])
+    func openWkWebView(with urlString: String)
 }
